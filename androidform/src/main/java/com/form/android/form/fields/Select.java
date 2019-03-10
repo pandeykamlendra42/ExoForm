@@ -207,7 +207,12 @@ public class Select extends AbstractWidget implements View.OnClickListener, OnRe
         tvError = configFieldView.findViewById(R.id.error_view);
 
         // Setting up click listener on form view.
-        etFieldValue.setOnClickListener(this);
+        etFieldValue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                renderOptions();
+            }
+        });
         configFieldView.findViewById(R.id.form_main_view).setOnClickListener(this);
 
         etFieldValue.setTag(ELEMENT_TAG + mFieldName);
@@ -223,6 +228,20 @@ public class Select extends AbstractWidget implements View.OnClickListener, OnRe
         }
 
 
+    }
+
+    private void renderOptions() {
+        View inflateView = mLayoutInflater.inflate(R.layout.list_options, null);
+        RecyclerView recyclerView = inflateView.findViewById(R.id.recycler_view);
+
+        recyclerView.getLayoutParams().height = RecyclerView.LayoutParams.WRAP_CONTENT;
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
+        recyclerView.setAdapter(mSheetAdapter);
+        mSheetAdapter.setDefaultKey(mFieldValue);
+        mBottomSheetDialog = new BottomSheetDialog(mContext);
+        mBottomSheetDialog.setContentView(inflateView);
+        mBottomSheetDialog.show();
     }
 
     /**
@@ -265,25 +284,7 @@ public class Select extends AbstractWidget implements View.OnClickListener, OnRe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
 
-            case R.id.field_value:
-            case R.id.form_main_view:
-                View inflateView = mLayoutInflater.inflate(R.layout.list_options, null);
-                RecyclerView recyclerView = inflateView.findViewById(R.id.recycler_view);
-
-                recyclerView.getLayoutParams().height = RecyclerView.LayoutParams.WRAP_CONTENT;
-                recyclerView.setHasFixedSize(true);
-                recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
-                recyclerView.setAdapter(mSheetAdapter);
-                mSheetAdapter.setDefaultKey(mFieldValue);
-                mBottomSheetDialog = new BottomSheetDialog(mContext);
-                mBottomSheetDialog.setContentView(inflateView);
-                mBottomSheetDialog.show();
-                break;
-
-
-        }
     }
 
 
