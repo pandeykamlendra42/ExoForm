@@ -3,7 +3,19 @@
 This library is made for rendering dynamic android forms with rich attributes and many form's layouts.
 
 ### Implementation / Compile
+Add it in your root build.gradle at the end of repositories:
 
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.pandeykamlendra42:androidForms:Tag'
+	}
 
 
 ### HOW TO USE?
