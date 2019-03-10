@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Android Form</string>
+    <string name="view_all">View All</string>
+    <string name="end_of_results">End of results</string>
+    <string name="please_select">please select</string>
+    <string name="select_file">select file</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="select_start_time_first">select start time first</string>
+    <string name="please_retry_option">Retry</string>
+    <string name="widget_error_msg">Please fill- This is a required field.</string>
+    <string name="please_select_label">please select</string>
+    <string name="places_api_key">AIzaSyB7oOFvRUnqAmYj-Pe9B8KUNFZ7ffmIkX4</string>
+</resources>

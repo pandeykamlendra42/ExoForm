@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~   Copyright (c) 2016 BigStep Technologies Private Limited.
+  ~
+  ~   You may not use this file except in compliance with the
+  ~   SocialEngineAddOns License Agreement.
+  ~   You may obtain a copy of the License at:
+  ~   https://www.socialengineaddons.com/android-app-license
+  ~   The full copyright and license information is also mentioned
+  ~   in the LICENSE file that was distributed with this
+  ~   source code.
+  ~
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/form_main_view"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="@dimen/padding_10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/padding_5dp"
+        android:paddingStart="@dimen/padding_5dp"
+        android:paddingRight="@dimen/padding_5dp"
+        android:paddingEnd="@dimen/padding_5dp"
+        android:paddingBottom="@dimen/padding_5dp"
+        android:id="@+id/title_fields_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_5dp"
+        android:paddingStart="@dimen/padding_5dp"
+        android:paddingRight="@dimen/padding_5dp"
+        android:paddingEnd="@dimen/padding_5dp"
+        android:id="@+id/selector_layout"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/view_label"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingEnd="@dimen/padding_5dp"
+            android:textSize="@dimen/size_14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/field_value"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:inputType="none"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:textSize="@dimen/size_14sp"
+            android:hint="@string/please_select"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|end"
+            android:background="@color/transparent"
+            android:drawableEnd="@drawable/ic_arrow_drop_down_24dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/error_view"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:paddingStart="@dimen/padding_5dp"
+            android:paddingRight="@dimen/padding_5dp"
+            android:paddingEnd="@dimen/padding_5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_description"
+        android:paddingLeft="@dimen/padding_5dp"
+        android:paddingStart="@dimen/padding_5dp"
+        android:paddingRight="@dimen/padding_5dp"
+        android:paddingEnd="@dimen/padding_5dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/size_14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_list"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/padding_5dp"
+        android:paddingStart="@dimen/padding_5dp"
+        android:paddingRight="@dimen/padding_5dp"
+        android:paddingEnd="@dimen/padding_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+
+    <View
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/light_gray" />
+
+</LinearLayout>

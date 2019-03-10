@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Floating label text style-->
+    <style name="MyHintText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/transparent</item>
+    </style>
+
+    <style name="SpinnerDateStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/transparent</item>
+    </style>
+
+    <style name="FormWidgetElement" parent="Theme.AppCompat.Light">
+        <item name="android:paddingRight">@dimen/dimen_5dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_5dp</item>
+        <item name="android:paddingLeft">@dimen/dimen_5dp</item>
+        <item name="android:paddingStart">@dimen/dimen_5dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_15dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_15dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_15dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_15dp</item>
+    </style>
+    <!--Style of text-view for form element error-->
+    <style name="fieldsValidationError">
+        <item name="android:paddingLeft">@dimen/dimen_5dp</item>
+        <item name="android:paddingStart">@dimen/dimen_5dp</item>
+        <item name="android:paddingRight">@dimen/dimen_5dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_5dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20dp</item>
+        <item name="android:textColor">@color/form_error</item>
+        <item name="android:textSize">@dimen/size_12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+    <style name="formLayout2Widget">
+        <item name="android:background">@drawable/bottom_border_rounded_corner</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_20dp</item>
+    </style>
+</resources>

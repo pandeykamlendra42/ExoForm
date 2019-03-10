@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~   Copyright (c) 2016 BigStep Technologies Private Limited.
+  ~
+  ~   You may not use this file except in compliance with the
+  ~   SocialEngineAddOns License Agreement.
+  ~   You may obtain a copy of the License at:
+  ~   https://www.socialengineaddons.com/android-app-license
+  ~   The full copyright and license information is also mentioned
+  ~   in the LICENSE file that was distributed with this
+  ~   source code.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/footer_layout"
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/padding_5dp"
+    android:paddingStart="@dimen/padding_5dp"
+    android:paddingEnd="@dimen/padding_5dp" >
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmallTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:padding="@dimen/padding_7dp"
+        android:paddingStart="@dimen/padding_7dp"
+        android:paddingEnd="@dimen/padding_7dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer_text"
+        android:padding="@dimen/padding_7dp"
+        android:paddingStart="@dimen/padding_7dp"
+        android:paddingEnd="@dimen/padding_7dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_12sp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:text="@string/view_all"/>
+
+</RelativeLayout>
